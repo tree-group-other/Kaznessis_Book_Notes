@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{geometry}  % To define margins
+\geometry{margin=1in}
+
+\usepackage{amsmath}   % For mathematical symbols
+\usepackage{hyperref}  % For clickable links in PDF
+\usepackage{enumitem}  % For custom list environments
+\usepackage{xcolor}    % For colored text (e.g., to highlight errors)
+
+% Custom command to format the error notes
+\newcommand{\errornote}[5]{
+    \noindent
+    \textbf{Name:} #1 \\
+    \textbf{Chapter:} #2 \\
+    \textbf{Page:} #3 \\
+    \textbf{Location:} #4 \\
+    \textbf{Error Description:} \\
+    \textcolor{blue}{#5} \vspace{0.5em} \\
+}
+
+\title{Notes and Errors in ``Statistical Thermodynamics and Stochastic Kinetics'' by Y.~Kaznessis}
+\author{Douglas Tree}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Chapter 1}
+
+% Format for making an error note
+%\errornote{Your Name}{Chapter}{Page}{Location}{
+%Description of the Error
+%}
+
+% Example of an error note
+\errornote{Doug Tree}{1}{25}{3rd paragraph, 2nd sentence}{
+Example only: The equation is missing a minus sign before the second term.
+}
+
+% Add more error notes below as needed
+
+\newpage
+\section{Chapter 2}
+
+%\errornote{2}{45}{Equation 2.7}{
+%    The variable 'x' should be 'y' in the equation.
+%}
+
+% Continue adding chapters and errors as you go
+
+\end{document}
+
